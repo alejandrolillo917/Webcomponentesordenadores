@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Componentes de una computadora</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;padding:0;background:#f6f8fb;color:#111}
+    header{background:linear-gradient(90deg,#1e90ff,#6dd3ff);color:white;padding:2rem;text-align:center}
+    main{max-width:1100px;margin:1.5rem auto;padding:1rem}
+    table{width:100%;border-collapse:collapse;margin-bottom:1.25rem;background:white;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    th,td{padding:0.9rem;border-bottom:1px solid #eee;text-align:left;vertical-align:top}
+    th{background:#f3f7fb;font-size:1rem}
+    .thumb{width:140px;max-height:90px;object-fit:cover;border-radius:6px}
+    .video-wrap{position:relative;padding-top:56.25%;margin-bottom:1rem}
+    .video-wrap iframe{position:absolute;left:0;top:0;width:100%;height:100%;border:0}
+    footer{font-size:0.9rem;color:#444;padding:1rem;text-align:center}
+    a{color:#0b66ff}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    @media(max-width:800px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Componentes de una computadora</h1>
+    <p>Descripción, imágenes, vídeo y enlaces. Organizado con tablas para facilitar su estudio.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Resumen rápido</h2>
+      <p>Esta página reúne los principales componentes de una computadora de escritorio: <strong>CPU, placa base, memoria RAM, almacenamiento, tarjeta gráfica, fuente de alimentación, caja, refrigeración y periféricos</strong>. Cada componente incluye una breve descripción, imagen, características clave y enlaces para ampliar información.</p>
+    </section>
+
+    <section>
+      <h2>Tabla: Componentes principales</h2>
+      <table>
+        <thead>
+          <tr><th>Componente</th><th>Imagen</th><th>Descripción</th><th>Funciones / Notas</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CPU (Procesador)</td>
+            <td><img class="thumb" src="/img/cpu.jpg" alt="Procesador CPU"></td>
+            <td>Unidad central de procesamiento. Ejecuta instrucciones y coordina operaciones de la computadora.</td>
+            <td>Velocidad (GHz), número de núcleos/hilos, caché, socket de la placa base.</td>
+          </tr>
+          <tr>
+            <td>Placa base (Motherboard)</td>
+            <td><img class="thumb" src="/img/placabase.jpg" alt="Placa base"></td>
+            <td>Placa principal que conecta todos los componentes: CPU, RAM, GPU, almacenamiento y periféricos.</td>
+            <td>Factor de forma (ATX, micro-ATX), chipset, ranuras PCIe, conexiones M.2/SATA.</td>
+          </tr>
+          <tr>
+            <td>Memoria RAM</td>
+            <td><img class="thumb" src="/img/RAM.jpg" alt="Módulo RAM"></td>
+            <td>Memoria de acceso aleatorio usada por el sistema para datos y programas en ejecución.</td>
+            <td>Capacidad (GB), velocidad (MHz), tipo (DDR4, DDR5), canales (dual/quad).</td>
+          </tr>
+          <tr>
+            <td>Almacenamiento (HDD/SSD)</td>
+            <td><img class="thumb" src="/img/discoduro.jpg" alt="HDD y SSD"></td>
+            <td>Discos donde se guardan los datos de forma persistente: HDD (mecánico) o SSD (memoria flash).</td>
+            <td>Velocidad, capacidad, interfaz (SATA, NVMe), durabilidad y coste por GB.</td>
+          </tr>
+          <tr>
+            <td>Tarjeta gráfica (GPU)</td>
+            <td><img class="thumb" src="/img/grafica.jpg" alt="Tarjeta gráfica"></td>
+            <td>Encargada del procesado gráfico y del renderizado de imágenes y vídeo (importante en juegos y tareas de gráficos).</td>
+            <td>Memoria VRAM, rendimiento en TFLOPS, consumo energético, salidas (HDMI, DisplayPort).</td>
+          </tr>
+          <tr>
+            <td>Fuente de alimentación (PSU)</td>
+            <td><img class="thumb" src="/img/fuente.jpg" alt="Fuente de alimentación"></td>
+            <td>Proporciona energía eléctrica a los componentes internos con los voltajes adecuados.</td>
+            <td>Potencia (W), certificación (80 Plus), conectores (24-pin, PCIe, SATA).</td>
+          </tr>
+          <tr>
+            <td>Caja (Case)</td>
+            <td><img class="thumb" src="/img/caja.jpg" alt="Caja PC"></td>
+            <td>Estructura física que aloja y protege los componentes; afecta la ventilación y compatibilidad.</td>
+            <td>Factor de forma, flujo de aire, bahías, espacio para GPU y disipadores grandes.</td>
+          </tr>
+          <tr>
+            <td>Refrigeración</td>
+            <td><img class="thumb" src="/img/refrigeracion.jpg" alt="Refrigeración"></td>
+            <td>Incluye disipadores, ventiladores y sistemas de refrigeración líquida para mantener temperaturas seguras.</td>
+            <td>Ruido, rendimiento térmico, compatibilidad con socket y case.</td>
+          </tr>
+          <tr>
+            <td>Periféricos y redes</td>
+            <td><img class="thumb" src="/img/perifericos.jpg" alt="Periféricos"></td>
+            <td>Teclado, ratón, monitor, altavoces, tarjeta de red (Ethernet/WiFi).</td>
+            <td>Puertos USB, latencia, resolución de pantalla, estándares de conexión.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="grid">
+      <div>
+        <h2>Vídeo explicativo</h2>
+        <div class="video-wrap">
+          
+          <iframe src="https://www.youtube.com/embed/A08VOjSa-5w" title="Componentes de la PC" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p>Vídeo de introducción sobre los componentes principales y cómo encajan en un equipo de escritorio.</p>
+      </div>
+
+      <div>
+        <h2>Enlaces útiles</h2>
+        <ul>
+          <li><a href="https://es.wikipedia.org/wiki/Unidad_central_de_procesamiento" target="_blank" rel="noopener">CPU — Wikipedia (ES)</a></li>
+          <li><a href="https://es.wikipedia.org/wiki/Placa_base" target="_blank" rel="noopener">Placa base — Wikipedia (ES)</a></li>
+          <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">Recursos para aprender más sobre hardware</a></li>
+
+       
+      </div>
+    </section>
+
+    <section>
+      <h2>Tabla: Comparativa rápida</h2>
+      <table>
+        <thead>
+          <tr><th>Componente</th><th>Prioridad al comprar</th><th>Influye en</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>CPU</td><td>Alta</td><td>Velocidad de cálculo, multitarea</td></tr>
+          <tr><td>GPU</td><td>Alta (gaming/render)</td><td>Gráficos, edición de vídeo</td></tr>
+          <tr><td>RAM</td><td>Media-Alta</td><td>Multitarea, fluidez del sistema</td></tr>
+          <tr><td>Almacenamiento</td><td>Media</td><td>Velocidad de arranque, carga de programas</td></tr>
+          <tr><td>PSU</td><td>Media</td><td>Estabilidad energética y seguridad</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    
+
+  </main>
+  
+  </footer>
+</body>
+</html>
